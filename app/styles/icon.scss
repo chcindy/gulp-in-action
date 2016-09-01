@@ -1,0 +1,23 @@
+// 图标生成
+@mixin ik-icon($u, $w, $h) {
+  width: $w;
+  height: $h;
+  background: url($u);
+  background-size: $w $h;
+}
+
+// 微信支付-logo
+.ik-icon-weixinPay-logo {
+  @include ik-icon('images/icons/weixin-logo.png?__sprite', 50px, 50px);
+}
+
+// 支付宝-logo
+.ik-icon-alipayPay-logo {
+  @include ik-icon('images/icons/alipay-logo.png?__sprite', 50px, 50px);
+}
+
+// 银联-logo
+.ik-icon-unionPay-logo {
+  @include ik-icon('images/icons/unionPay-logo.png?__sprite', 50px, 50px);
+}
+
